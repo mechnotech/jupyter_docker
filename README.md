@@ -8,7 +8,7 @@ Install [Git](https://github.com/git-guides/install-git) Install [Docker](https:
 
 Clone the repository and go to the project folder:
 
-`git clone https://github.com/mechnotech/jupiter_docker && cd jupiter_docker`
+`git clone https://github.com/mechnotech/jupyter_docker && cd jupyter_docker`
  
 Start building a container with Jupyter notebooks:
 
