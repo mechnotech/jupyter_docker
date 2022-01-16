@@ -1,19 +1,19 @@
 version: "3.6"
 
 volumes:
-  jupiter_data:
-    name: jupiter_data
-  jupiter_work:
-    name: jupiter_work
+  jupyter_data:
+    name: jupyter_data
+  jupyter_work:
+    name: jupyter_work
 
 services:
-  jupiter:
+  jupyter:
     build: .
-    container_name: jupiter
+    container_name: jupyter
     volumes:
-      - jupiter_data:/code
-      - jupiter_work:/home/docker_worker/work
-#      - ./config/jupiter_notebook_config.py:/root/.jupyter/jupiter_notebook_config.py
+      - jupyter_data:/code
+      - jupyter_work:/home/docker_worker/work
+#      - ./config/jupiter_notebook_config.py:/root/.jupyter/jupyter_notebook_config.py
     restart: always
     env_file:
       - env
