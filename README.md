@@ -23,3 +23,10 @@ Get started with a link
 `http://127.0.0.1:8888/?token=<some_token>`
 
 `http://ip:8888/?token=<some_token>`
+
+#### To start Jupyter Lab
+
+```
+cd lab
+docker-compose up -d
+```
