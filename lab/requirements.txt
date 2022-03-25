@@ -1,5 +1,7 @@
 jupyter
 jupyterlab
+jupyter_lsp==1.5.1
+jedi-language-server==0.35.1
 sklearn
 pandas==1.3.5
 matplotlib==3.5.1
