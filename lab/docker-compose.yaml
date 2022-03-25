@@ -3,8 +3,10 @@ version: "3.6"
 volumes:
   jupyter_data:
     name: jupyter_data
-  jupyter_work:
-    name: jupyter_work
+  jupyter_config:
+    name: jupyter_config
+  jupyter_runtime:
+    name: jupyter_runtime
 
 services:
   jupyter_lab:
@@ -12,10 +14,8 @@ services:
     container_name: jupyter_lab
     volumes:
       - jupyter_data:/code
-      - jupyter_work:/home/docker_worker/work
-#      - ./config/jupiter_notebook_config.py:/root/.jupyter/jupyter_notebook_config.py
-#    restart: always
-#    env_file:
-#      - env
+      - jupyter_config:/root/.jupyter
+      - jupyter_runtime:/root/.local/share/jupyter/runtime
+
     ports:
       - "8888:8888"
