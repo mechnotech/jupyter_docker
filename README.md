@@ -27,6 +27,11 @@ Get started with a link
 #### To start Jupyter Lab
 
 ```
-cd lab
-docker-compose up -d
+make lab-up
+```
+
+#### To start Jupyter Lab with NVIDIA CUDA
+
+```
+make cuda-lab-up
 ```

@@ -1,8 +1,8 @@
 version: "3.9"
 
 volumes:
-  jupiter_data:
-    name: jupiter_data
+  jupyter_data:
+    name: jupyter_data
   jupyter_config:
     name: jupyter_config
   jupyter_runtime:
@@ -13,9 +13,15 @@ services:
     build: .
     container_name: jupyter_lab
     volumes:
-      - jupiter_data:/code
+      - jupyter_data:/code
       - jupyter_config:/root/.jupyter
       - jupyter_runtime:/root/.local/share/jupyter/runtime
-
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [ gpu ]
     ports:
       - "8888:8888"
