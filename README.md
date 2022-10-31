@@ -2,7 +2,7 @@
 ### Compact docker compose for your Jupyter notebooks
 
 
-#### To start from scratch:
+#### To start Jupyter notebooks from scratch:
 
 Install [Git](https://github.com/git-guides/install-git) Install [Docker](https://docs.docker.com/engine/install/) and [docker-compose](https://docs.docker.com/compose/install/#install-compose)
 
