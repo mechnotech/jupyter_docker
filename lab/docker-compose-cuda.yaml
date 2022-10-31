@@ -1,8 +1,8 @@
 version: "3.9"
 
 volumes:
-  jupiter_data:
-    name: jupiter_data
+  jupyter_data:
+    name: jupyter_data
   jupyter_config:
     name: jupyter_config
   jupyter_runtime:
@@ -13,9 +13,17 @@ services:
     build:
       dockerfile: Dockerfile-cuda
       context: .
+      shm_size: '32gb'
     container_name: jupyter_lab
+    restart: always
+    shm_size: '32gb'
+#    ulimits:
+#      memlock: -1
+#      stack: 67108864
+    environment:
+      NCCL_DEBUG: INFO
     volumes:
-      - jupiter_data:/code
+      - jupyter_data:/code
       - jupyter_config:/root/.jupyter
       - jupyter_runtime:/root/.local/share/jupyter/runtime
     deploy:
