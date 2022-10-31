@@ -1,4 +1,4 @@
-## jupiter docker
+## Jupyter docker
 ### Compact docker compose for your Jupyter notebooks
 
 
