@@ -30,8 +30,12 @@ Get started with a link
 make lab-up
 ```
 
-#### To start Jupyter Lab with NVIDIA CUDA
+#### To start Jupyter Lab with NVIDIA CUDA + Pytorch
 
 ```
-make cuda-lab-up
+make pytorch-up
 ```
+
+#### To start Jupyter Lab with NVIDIA CUDA + Tensorflow
+
+`make tensorflow-up`

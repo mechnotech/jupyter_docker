@@ -3,8 +3,8 @@ jupyterlab
 jupyter_lsp==1.5.1
 jedi-language-server==0.35.1
 jupyterlab-git==0.36.0
-sklearn
-pandas==1.3.5
-matplotlib==3.5.1
+scikit-learn
+pandas
+matplotlib
 seaborn==0.11.2
 pymystem3==0.2.0
