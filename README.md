@@ -38,4 +38,6 @@ make pytorch-up
 
 #### To start Jupyter Lab with NVIDIA CUDA + Tensorflow
 
-`make tensorflow-up`
+```
+make tensorflow-up
+```
