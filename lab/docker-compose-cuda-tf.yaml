@@ -12,12 +12,12 @@ volumes:
     external: true
 
 services:
-  jupyter_lab:
+  jupyter_lab_tf:
     build:
       dockerfile: Dockerfile-cuda-tf
       context: .
       shm_size: '32gb'
-    container_name: jupyter_lab
+    container_name: jupyter_lab_tf
     restart: always
     shm_size: '32gb'
 #    ulimits:
