@@ -142,3 +142,4 @@ cython_debug/
 docker-compose.yaml
 Dockerfile
 README.md
+.env

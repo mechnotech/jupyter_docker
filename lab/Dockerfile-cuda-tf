@@ -7,4 +7,3 @@ COPY /requirements.txt /code/requirements.txt
 RUN pip install --no-cache-dir -r /code/requirements.txt
 RUN pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu116
 COPY ./ /code
-ENTRYPOINT ["jupyter", "lab","--ip=0.0.0.0","--allow-root", "--NotebookApp.token=''","--NotebookApp.password=''"]

@@ -40,3 +40,6 @@ services:
               capabilities: [ gpu ]
     ports:
       - "8888:8888"
+    env_file:
+      - .env
+    entrypoint: ["jupyter", "lab","--ip=0.0.0.0","--allow-root", "--NotebookApp.token=$JUPYTER_LAB_GATEWAY_HTTP_TOKEN","--NotebookApp.password=''", "--collaborative"]
